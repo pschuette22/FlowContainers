@@ -16,7 +16,7 @@ public final class DeinitListenerTests: XCTestCase {
         let expectation = XCTestExpectation(description: "DeinitCallback is called")
         autoreleasepool {
             let viewController = UIViewController()
-            let listener = DeinitListener(observe: viewController) {
+            DeinitListener(observe: viewController) {
                 expectation.fulfill()
             }
         }

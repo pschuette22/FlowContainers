@@ -18,6 +18,7 @@ final class DeinitListener: NSObject {
     /// - Parameters:
     ///   - observed: Object to observe deallocation
     ///   - onDeinit: Callback when object is deallocated
+    @discardableResult
     init(observe observed: some AnyObject, _ onDeinit: @escaping DeinitCallback) {
         self.observed = observed
         self.onDeinit = onDeinit
