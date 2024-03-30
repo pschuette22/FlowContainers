@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		4945651D2BB8A9EE0056FC15 /* FlowContainers.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4945651C2BB8A9EE0056FC15 /* FlowContainers.docc */; };
 		494565232BB8A9EE0056FC15 /* FlowContainers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494565182BB8A9EE0056FC15 /* FlowContainers.framework */; };
-		494565282BB8A9EE0056FC15 /* FlowContainersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565272BB8A9EE0056FC15 /* FlowContainersTests.swift */; };
 		494565292BB8A9EE0056FC15 /* FlowContainers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4945651B2BB8A9EE0056FC15 /* FlowContainers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		494565372BB8BF910056FC15 /* DeinitListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565362BB8BF910056FC15 /* DeinitListener.swift */; };
+		4945653C2BB8C14F0056FC15 /* DeinitListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945653A2BB8C1460056FC15 /* DeinitListenerTests.swift */; };
+		4945653F2BB8C2370056FC15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4945653E2BB8C2370056FC15 /* UIKit.framework */; };
+		494565422BB8C2E30056FC15 /* TimeInterval+Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565412BB8C2E30056FC15 /* TimeInterval+Configurations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,10 @@
 		4945651B2BB8A9EE0056FC15 /* FlowContainers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowContainers.h; sourceTree = "<group>"; };
 		4945651C2BB8A9EE0056FC15 /* FlowContainers.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FlowContainers.docc; sourceTree = "<group>"; };
 		494565222BB8A9EE0056FC15 /* FlowContainersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowContainersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		494565272BB8A9EE0056FC15 /* FlowContainersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainersTests.swift; sourceTree = "<group>"; };
+		494565362BB8BF910056FC15 /* DeinitListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeinitListener.swift; sourceTree = "<group>"; };
+		4945653A2BB8C1460056FC15 /* DeinitListenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeinitListenerTests.swift; sourceTree = "<group>"; };
+		4945653E2BB8C2370056FC15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		494565412BB8C2E30056FC15 /* TimeInterval+Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Configurations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4945653F2BB8C2370056FC15 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +60,10 @@
 		4945650E2BB8A9EE0056FC15 = {
 			isa = PBXGroup;
 			children = (
-				4945651A2BB8A9EE0056FC15 /* FlowContainers */,
-				494565262BB8A9EE0056FC15 /* FlowContainersTests */,
+				4945651A2BB8A9EE0056FC15 /* Package */,
+				494565262BB8A9EE0056FC15 /* UnitTests */,
 				494565192BB8A9EE0056FC15 /* Products */,
+				4945653D2BB8C2370056FC15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,21 +76,87 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4945651A2BB8A9EE0056FC15 /* FlowContainers */ = {
+		4945651A2BB8A9EE0056FC15 /* Package */ = {
 			isa = PBXGroup;
 			children = (
+				494565322BB8BEA80056FC15 /* Source */,
 				4945651B2BB8A9EE0056FC15 /* FlowContainers.h */,
 				4945651C2BB8A9EE0056FC15 /* FlowContainers.docc */,
 			);
-			path = FlowContainers;
+			path = Package;
 			sourceTree = "<group>";
 		};
-		494565262BB8A9EE0056FC15 /* FlowContainersTests */ = {
+		494565262BB8A9EE0056FC15 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				494565272BB8A9EE0056FC15 /* FlowContainersTests.swift */,
+				494565402BB8C2940056FC15 /* _Configurations */,
+				494565382BB8C12A0056FC15 /* Private */,
 			);
-			path = FlowContainersTests;
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		494565322BB8BEA80056FC15 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				494565342BB8BF610056FC15 /* Private */,
+				494565332BB8BF540056FC15 /* Public */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		494565332BB8BF540056FC15 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		494565342BB8BF610056FC15 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				494565352BB8BF740056FC15 /* Listeners */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		494565352BB8BF740056FC15 /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				494565362BB8BF910056FC15 /* DeinitListener.swift */,
+			);
+			path = Listeners;
+			sourceTree = "<group>";
+		};
+		494565382BB8C12A0056FC15 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				494565392BB8C1350056FC15 /* Listeners */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		494565392BB8C1350056FC15 /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				4945653A2BB8C1460056FC15 /* DeinitListenerTests.swift */,
+			);
+			path = Listeners;
+			sourceTree = "<group>";
+		};
+		4945653D2BB8C2370056FC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4945653E2BB8C2370056FC15 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		494565402BB8C2940056FC15 /* _Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				494565412BB8C2E30056FC15 /* TimeInterval+Configurations.swift */,
+			);
+			path = _Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494565372BB8BF910056FC15 /* DeinitListener.swift in Sources */,
 				4945651D2BB8A9EE0056FC15 /* FlowContainers.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				494565282BB8A9EE0056FC15 /* FlowContainersTests.swift in Sources */,
+				4945653C2BB8C14F0056FC15 /* DeinitListenerTests.swift in Sources */,
+				494565422BB8C2E30056FC15 /* TimeInterval+Configurations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +429,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -370,7 +446,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -394,7 +471,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -411,7 +488,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -423,17 +501,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 384WS8QBWW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteschuette.FlowContainersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,17 +524,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 384WS8QBWW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteschuette.FlowContainersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
