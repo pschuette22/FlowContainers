@@ -14,6 +14,14 @@
 		4945653C2BB8C14F0056FC15 /* DeinitListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945653A2BB8C1460056FC15 /* DeinitListenerTests.swift */; };
 		4945653F2BB8C2370056FC15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4945653E2BB8C2370056FC15 /* UIKit.framework */; };
 		494565422BB8C2E30056FC15 /* TimeInterval+Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565412BB8C2E30056FC15 /* TimeInterval+Configurations.swift */; };
+		494565462BB8C7E10056FC15 /* FlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565452BB8C7E10056FC15 /* FlowContainer.swift */; };
+		494565492BB8CA710056FC15 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565482BB8CA710056FC15 /* Collection+Extensions.swift */; };
+		4945654B2BB8CBE50056FC15 /* NavigationBindingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945654A2BB8CBE50056FC15 /* NavigationBindingDelegate.swift */; };
+		4945654D2BB8CF890056FC15 /* UINavigationController+PrivateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945654C2BB8CF890056FC15 /* UINavigationController+PrivateExtensions.swift */; };
+		4945654F2BB8D1D20056FC15 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945654E2BB8D1D20056FC15 /* UINavigationController+Extensions.swift */; };
+		494565522BB8D22E0056FC15 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565512BB8D22E0056FC15 /* UIViewController+Extensions.swift */; };
+		494565572BB8D5740056FC15 /* FlowContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565552BB8D5700056FC15 /* FlowContainerTests.swift */; };
+		4945655B2BB8D6B40056FC15 /* Collection_ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565592BB8D6B10056FC15 /* Collection_ExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,14 @@
 		4945653A2BB8C1460056FC15 /* DeinitListenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeinitListenerTests.swift; sourceTree = "<group>"; };
 		4945653E2BB8C2370056FC15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		494565412BB8C2E30056FC15 /* TimeInterval+Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Configurations.swift"; sourceTree = "<group>"; };
+		494565452BB8C7E10056FC15 /* FlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainer.swift; sourceTree = "<group>"; };
+		494565482BB8CA710056FC15 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		4945654A2BB8CBE50056FC15 /* NavigationBindingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBindingDelegate.swift; sourceTree = "<group>"; };
+		4945654C2BB8CF890056FC15 /* UINavigationController+PrivateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+PrivateExtensions.swift"; sourceTree = "<group>"; };
+		4945654E2BB8D1D20056FC15 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		494565512BB8D22E0056FC15 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		494565552BB8D5700056FC15 /* FlowContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainerTests.swift; sourceTree = "<group>"; };
+		494565592BB8D6B10056FC15 /* Collection_ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_ExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +105,7 @@
 		494565262BB8A9EE0056FC15 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				494565532BB8D5520056FC15 /* Public */,
 				494565402BB8C2940056FC15 /* _Configurations */,
 				494565382BB8C12A0056FC15 /* Private */,
 			);
@@ -107,6 +124,8 @@
 		494565332BB8BF540056FC15 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				494565442BB8C7CA0056FC15 /* FlowContainer */,
+				494565502BB8D1D70056FC15 /* UIKit+Extensions */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -114,6 +133,7 @@
 		494565342BB8BF610056FC15 /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				494565472BB8CA600056FC15 /* Extensions */,
 				494565352BB8BF740056FC15 /* Listeners */,
 			);
 			path = Private;
@@ -130,6 +150,7 @@
 		494565382BB8C12A0056FC15 /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				494565582BB8D69E0056FC15 /* Extensions */,
 				494565392BB8C1350056FC15 /* Listeners */,
 			);
 			path = Private;
@@ -157,6 +178,57 @@
 				494565412BB8C2E30056FC15 /* TimeInterval+Configurations.swift */,
 			);
 			path = _Configurations;
+			sourceTree = "<group>";
+		};
+		494565442BB8C7CA0056FC15 /* FlowContainer */ = {
+			isa = PBXGroup;
+			children = (
+				494565452BB8C7E10056FC15 /* FlowContainer.swift */,
+				4945654A2BB8CBE50056FC15 /* NavigationBindingDelegate.swift */,
+			);
+			path = FlowContainer;
+			sourceTree = "<group>";
+		};
+		494565472BB8CA600056FC15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				494565482BB8CA710056FC15 /* Collection+Extensions.swift */,
+				4945654C2BB8CF890056FC15 /* UINavigationController+PrivateExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		494565502BB8D1D70056FC15 /* UIKit+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4945654E2BB8D1D20056FC15 /* UINavigationController+Extensions.swift */,
+				494565512BB8D22E0056FC15 /* UIViewController+Extensions.swift */,
+			);
+			path = "UIKit+Extensions";
+			sourceTree = "<group>";
+		};
+		494565532BB8D5520056FC15 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				494565542BB8D55D0056FC15 /* FlowContainer */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		494565542BB8D55D0056FC15 /* FlowContainer */ = {
+			isa = PBXGroup;
+			children = (
+				494565552BB8D5700056FC15 /* FlowContainerTests.swift */,
+			);
+			path = FlowContainer;
+			sourceTree = "<group>";
+		};
+		494565582BB8D69E0056FC15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				494565592BB8D6B10056FC15 /* Collection_ExtensionsTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +341,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				494565372BB8BF910056FC15 /* DeinitListener.swift in Sources */,
+				4945654D2BB8CF890056FC15 /* UINavigationController+PrivateExtensions.swift in Sources */,
+				4945654B2BB8CBE50056FC15 /* NavigationBindingDelegate.swift in Sources */,
+				494565492BB8CA710056FC15 /* Collection+Extensions.swift in Sources */,
+				494565522BB8D22E0056FC15 /* UIViewController+Extensions.swift in Sources */,
 				4945651D2BB8A9EE0056FC15 /* FlowContainers.docc in Sources */,
+				494565462BB8C7E10056FC15 /* FlowContainer.swift in Sources */,
+				4945654F2BB8D1D20056FC15 /* UINavigationController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494565572BB8D5740056FC15 /* FlowContainerTests.swift in Sources */,
 				4945653C2BB8C14F0056FC15 /* DeinitListenerTests.swift in Sources */,
+				4945655B2BB8D6B40056FC15 /* Collection_ExtensionsTests.swift in Sources */,
 				494565422BB8C2E30056FC15 /* TimeInterval+Configurations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
