@@ -165,7 +165,7 @@ extension FlowContainer {
   ///   - animated: True if the ViewController should be presented with animation. True by default
   ///   - completion: (optional) completion to be called after the ViewController is presented over the current flow
   public func present(
-    _ viewController: some UIViewController,
+    _ viewController: UIViewController,
     animated: Bool = true,
     completion: (() -> Void)? = nil
   ) {
@@ -262,8 +262,8 @@ extension FlowContainer {
 // MARK: - Attach / Detach
 
 extension FlowContainer {
-  /// Attach the flow coordinator to the memory allocation of the ``UINavigationController``
-  /// - Parameter navigationController: controller which should dictate FlowContainer allocation
+  /// Attach the flow coordinator a ``UINavigationController``
+  /// - Parameter navigationController: controller that flow container should attach to
   private func attach(to navigationController: UINavigationController) {
     guard self.navigationController == nil else {
       assertionFailure(
