@@ -5,10 +5,10 @@
 //  Created by Peter Schuette on 3/30/24.
 //
 
-import Foundation
 @testable import FlowContainers
-import XCTest
+import Foundation
 import UIKit
+import XCTest
 
 public final class DeinitListenerTests: XCTestCase {
     @MainActor
