@@ -25,20 +25,20 @@ final class FlowContainerTests: XCTestCase {
         super.setUp()
         flowContainer = TestFlowContainer()
     }
-
+    
     func testStart_pushesInitialViewController() {
         let viewController = UIViewController()
         let navigationController = UINavigationController()
-
+        
         flowContainer.injectedInitialViewController = viewController
         flowContainer.start(on: navigationController)
         XCTAssertEqual(navigationController.topViewController, viewController)
     }
-
+    
     func testPushViewController_pushesAViewControllerOntoNavigationController() {
         let viewController = UIViewController()
         let navigationController = UINavigationController()
-
+        
         flowContainer.injectedInitialViewController = viewController
         flowContainer.start(on: navigationController)
         
@@ -49,18 +49,35 @@ final class FlowContainerTests: XCTestCase {
         XCTAssertEqual([viewController, nextViewController], flowContainer.orderedPushedControllers)
     }
     
-    func testPresentViewController_presentsViewController() {
+    func testPushFlowContainer_pushesSecondFlowContainerInitialControllerOnToStack() {
         let viewController = UIViewController()
         let navigationController = UINavigationController()
-
+        
         flowContainer.injectedInitialViewController = viewController
         flowContainer.start(on: navigationController)
         
+        let nextFlowContainer = TestFlowContainer()
         let nextViewController = UIViewController()
-        flowContainer.present(nextViewController, animated: false)
+        nextFlowContainer.injectedInitialViewController = nextViewController
+        flowContainer.push(nextFlowContainer, animated: false)
         
-        XCTAssertEqual(navigationController.presentedViewController, nextViewController)
-        XCTAssertEqual(flowContainer.presentedController, nextViewController)
+        XCTAssertEqual(navigationController.topViewController, nextViewController)
     }
+    
+    func testPopViewController_whenFlowContainerViewControllersAreRemoved_deallocatesFlowContainer() {
+        let navigationController = UINavigationController()
+        weak var flowContainer: TestFlowContainer?
+        autoreleasepool {
+            let viewController = UIViewController()
+            let fc = TestFlowContainer()
+            fc.injectedInitialViewController = viewController
+            flowContainer = fc
+            navigationController.pushViewController(UIViewController(), animated: false)
+            flowContainer?.start(on: navigationController, animated: false)
+            XCTAssertEqual(navigationController.topViewController, viewController)
+            navigationController.popViewController(animated: false)
+        }
         
+        XCTAssertNil(flowContainer)
+    }
 }

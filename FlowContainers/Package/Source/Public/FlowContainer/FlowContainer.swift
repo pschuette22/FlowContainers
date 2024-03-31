@@ -90,7 +90,9 @@ open class FlowContainer: NSObject {
     completion: (() -> Void)? = nil
   ) {
       if navigationController?.presentedViewController != nil {
-          presentedController?.dismiss(animated: animated)
+          navigationController?.dismiss(animated: animated) { [weak self] in
+              self?.finish(animated: animated, completion: completion)
+          }
       }
 
     guard let navigationController else { return }
@@ -99,7 +101,7 @@ open class FlowContainer: NSObject {
 
     let navigationStack = navigationController.viewControllers.filter { !remove.contains($0.hashValue) }
     if navigationStack.isEmpty {
-      navigationController.dismiss(animated: animated, completion: completion)
+        navigationController.presentingViewController?.dismiss(animated: animated, completion: completion)
     } else {
       navigationController.setViewControllers(navigationStack, animated: animated, completion: completion)
     }
@@ -119,7 +121,8 @@ extension FlowContainer {
   /// An array of ``UIViewController``s pushed by this FlowContainer in the order they exist on the NavigationStack.
   public var orderedPushedControllers: [UIViewController] {
     let pushedControllerHashes = Set(pushedControllers.map(\.hash))
-    return navigationController?.viewControllers.filter { pushedControllerHashes.contains($0.hash) } ?? []
+      return navigationController?.viewControllers.filter { pushedControllerHashes.contains($0.hash)
+      } ?? []
   }
 
   /// An array of ``UIViewController``s pushed by this FlowContainer. Order is not guaranteed.
