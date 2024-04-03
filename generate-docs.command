@@ -1,1 +1,2 @@
-xcrun docc process-archive transform-for-static-hosting ./FlowContainers.doccarchive --output-path docs
+xcodebuild docbuild -project 'FlowContainers/FlowContainers.xcodeproj' -scheme FlowContainers -derivedDataPath /tmp/docbuild -destination 'platform=iOS Simulator,name=iPhone 15 Pro Max'
+$(xcrun --find docc) process-archive transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphonesimulator/FlowContainers.doccarchive --output-path docs --hosting-base-path 'FlowContainers'
