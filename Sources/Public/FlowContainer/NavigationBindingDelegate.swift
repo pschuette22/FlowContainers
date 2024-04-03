@@ -9,47 +9,47 @@
     import Foundation
     import UIKit
 
-    /// Interface for an object which acts as a ``FlowContainer``'s delegate when binding and unbinding from it's ``UINavigationController``
+    /// Interface for an object which acts as a ``FlowContainer``'s delegate when binding and unbinding from it's ``UIKit/UINavigationController`` 
     public protocol NavigationBindingDelegate: AnyObject {
-        /// Called before a ``FlowContainer`` attaches to a ``UINavigationController``
+        /// Called before a ``FlowContainer`` attaches to a ``UIKit/UINavigationController`` 
         /// - Parameters:
         ///   - flowContainer: ``FlowContainer`` which will attach
-        ///   - navigationController: ``UINavigationController`` which ``FlowContainer`` will attach to
+        ///   - navigationController: ``UIKit/UINavigationController``  which ``FlowContainer`` will attach to
         func willAttach(
             _ flowContainer: FlowContainer,
             to navigationController: UINavigationController
         )
 
-        /// Called after a ``FlowContainer`` attaches to a ``UINavigationController``
+        /// Called after a ``FlowContainer`` attaches to a ``UIKit/UINavigationController`` 
         /// - Parameters:
         ///   - flowContainer: ``FlowContainer`` which did attach
-        ///   - navigationController: ``UINavigationController`` which ``FlowContainer`` is now attached to
+        ///   - navigationController: ``UIKit/UINavigationController``  which ``FlowContainer`` is now attached to
         func didAttach(
             _ flowContainer: FlowContainer,
             to navigationController: UINavigationController
         )
 
-        /// Called when a ``FlowContainer`` no longer has any pushed or presented ``UIViewController``s
+        /// Called when a ``FlowContainer`` no longer has any pushed or presented ``UIKit/UIViewController`` s
         /// - Parameters:
-        ///   - flowContainer: ``FlowContainer`` whose ``UIViewController``s were all dismissed
+        ///   - flowContainer: ``FlowContainer`` whose ``UIKit/UIViewController`` s were all dismissed
         func didDismissAllControllers(presentedBy flowCoodinator: FlowContainer)
 
-        /// Use to prevent a ``FlowContainer`` from automatically detatching from its ``UINavigationController``.
+        /// Use to prevent a ``FlowContainer`` from automatically detatching from its ``UIKit/UINavigationController`` .
         /// **BEWARE** If implemented, you are responsible for detatching the ``FlowContainer`` when necessary.
         /// ```swift
         ///   myFlowContainer.detatch()
         /// ```
         ///
         /// - Parameter flowContainer: ``FlowContainer`` which is requesting to detach
-        /// - Returns: True if ``FlowContainer`` should detach from it's ``UINavigationController``. False if not
+        /// - Returns: True if ``FlowContainer`` should detach from it's ``UIKit/UINavigationController`` . False if not
         func shouldDetach(_ flowContainer: FlowContainer) -> Bool
 
-        /// Called before a ``FlowContainer`` detaches from it's ``UINavigationController``
+        /// Called before a ``FlowContainer`` detaches from it's ``UIKit/UINavigationController`` 
         /// - Parameter flowContainer: ``FlowContainer`` which is preparing to detach
         func willDetach(_ flowContainer: FlowContainer)
 
-        /// Called after a ``FlowContainer`` has detached from it's ``UINavigationController``
-        /// - Parameter flowContainer: ``FlowContainer`` which has detached from it's ``UINavigationController``
+        /// Called after a ``FlowContainer`` has detached from it's ``UIKit/UINavigationController`` 
+        /// - Parameter flowContainer: ``FlowContainer`` which has detached from it's ``UIKit/UINavigationController`` 
         func didDetach(_ flowContainer: FlowContainer)
     }
 
