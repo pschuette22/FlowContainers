@@ -14,7 +14,7 @@
         /// Presents a ``FlowContainer`` modally
         /// - Parameters:
         ///   - flowContainer: ``FlowContainer`` implementation
-        ///   - navigationController: ``NavigationController`` to attach the flow to. Defaults to a new ``NavigationController`` instance
+        ///   - navigationController: ``UIKit/UINavigationController`` to attach the flow to. Defaults to a new ``UIKit/UINavigationController`` instance
         ///   - animated: Pass true to animate the presentation; otherwise, pass false. True by default
         ///   - completion: (optional) completion to be called after the flow is presented
         func present(
