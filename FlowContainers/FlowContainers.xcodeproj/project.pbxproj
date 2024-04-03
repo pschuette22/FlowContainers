@@ -51,6 +51,7 @@
 		494565512BB8D22E0056FC15 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		494565552BB8D5700056FC15 /* FlowContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainerTests.swift; sourceTree = "<group>"; };
 		494565592BB8D6B10056FC15 /* Collection_ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_ExtensionsTests.swift; sourceTree = "<group>"; };
+		49A49EC52BBD098500A30939 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 		4945650E2BB8A9EE0056FC15 = {
 			isa = PBXGroup;
 			children = (
+				49A49EC52BBD098500A30939 /* Package.swift */,
 				4945651A2BB8A9EE0056FC15 /* Package */,
 				494565262BB8A9EE0056FC15 /* UnitTests */,
 				494565192BB8A9EE0056FC15 /* Products */,
@@ -509,7 +511,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -551,7 +553,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
