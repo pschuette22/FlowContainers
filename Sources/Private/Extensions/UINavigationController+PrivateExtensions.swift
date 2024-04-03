@@ -10,7 +10,7 @@
     import UIKit
 
     extension UINavigationController {
-        /// Push a ``UIViewController`` onto the navigation stack and attach a completion to the ``CATransaction``
+        /// Push a ``UIKit/UIViewController``  onto the navigation stack and attach a completion to the ``CATransaction``
         /// - Parameters:
         ///   - viewController: ViewController to be pushed onto the stack
         ///   - animated: True if the transition should be animated
@@ -26,7 +26,7 @@
             CATransaction.commit()
         }
 
-        /// Update the navigation stack to a set of specific``UIViewController``s and attach a completion to the ``CATransaction``
+        /// Update the navigation stack to a set of specific``UIKit/UIViewController`` s and attach a completion to the ``CATransaction``
         /// - Parameters:
         ///   - viewControllers: Array of ViewControllers which should represent the navigation stack
         ///   - animated: True if the transition should be animated
@@ -42,7 +42,7 @@
             CATransaction.commit()
         }
 
-        /// Pop the navigation stack back to a specific ``UIViewController`` and attach a completion to the ``CATransaction``
+        /// Pop the navigation stack back to a specific ``UIKit/UIViewController``  and attach a completion to the ``CATransaction``
         /// - Parameters:
         ///   - viewController: ViewController that should ultimately be at the top of the Navigation stack
         ///   - animated: True if the transition should be animated
