@@ -1,1 +1,1 @@
-swift package --allow-writing-to-directory ./docs/ generate-documentation --target FlowContainers --disable-indexing --transform-for-static-hosting --hosting-base-path https://github.com/pschuette22/FlowContainers --output-path ./docs/ 
+xcrun docc process-archive transform-for-static-hosting ./FlowContainers.doccarchive --output-path docs
