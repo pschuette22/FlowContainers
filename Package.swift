@@ -19,7 +19,14 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "FlowContainers"),
+            name: "FlowContainers",
+            exclude: [
+                "docs/",
+                "Sample/",
+                "FlowContainers/",
+                "generate-docs.command"
+            ]
+        ),
         .testTarget(
             name: "FlowContainersTests",
             dependencies: ["FlowContainers"]

@@ -1,0 +1,15 @@
+{
+  "originHash" : "0182dbd04277a6bbf6f7fdc1b7c6ddd2c6e69935ec698c2e7aa17eb6c3cff76f",
+  "pins" : [
+    {
+      "identity" : "flowcontainers",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pschuette22/FlowContainers",
+      "state" : {
+        "revision" : "fd67c19e70bb5846f2c6cc4a368cee80c305bde8",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
