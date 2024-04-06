@@ -19,6 +19,7 @@
 		495624742BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */; };
 		495624762BC0D45400ABB722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624752BC0D45400ABB722 /* SceneDelegate.swift */; };
 		49C351382BC0F59100DAD722 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 49C351372BC0F59100DAD722 /* AsyncAlgorithms */; };
+		49C3513A2BC102DC00DAD722 /* SecondBlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueFlowViewControllerFactory.swift; sourceTree = "<group>"; };
 		495624752BC0D45400ABB722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		495624772BC0DA7900ABB722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBlueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				4956246A2BBE560B00ABB722 /* FirstBlueViewController.swift */,
 				495624712BC0D1C900ABB722 /* BlueFlowContainer.swift */,
 				495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */,
+				49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */,
 			);
 			path = BlueFlow;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C3513A2BC102DC00DAD722 /* SecondBlueViewController.swift in Sources */,
 				495624762BC0D45400ABB722 /* SceneDelegate.swift in Sources */,
 				495624702BBE5CF700ABB722 /* AppDelegate.swift in Sources */,
 				495624742BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift in Sources */,

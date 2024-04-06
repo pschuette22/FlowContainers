@@ -10,10 +10,11 @@ import FlowContainers
 import Foundation
 import UIKit
 
-final class BlueFlowContainer: FlowContainer, NavigationBindingDelegate {
+final class BlueFlowContainer: FlowContainer {
     enum BlueFlowAction: Equatable, Sendable {
         case pushNextBlueScreen
         case pushNextFlow // Green?
+        case presentNextFlow
     }
 
     private let controllerFactory: BlueFlowViewControllerFactoryProtocol
@@ -54,10 +55,13 @@ extension BlueFlowContainer {
     func handle(_ action: BlueFlowAction) {
         switch action {
         case .pushNextBlueScreen:
-            print("push next blue screen")
+            let viewController = controllerFactory.buildSecondViewController(actionChannel)
+            push(viewController)
         case .pushNextFlow:
             // Push another blue flow for now
             push(BlueFlowContainer())
+        case .presentNextFlow:
+            present(BlueFlowContainer())
         }
     }
 }
@@ -70,6 +74,20 @@ extension AsyncChannel where Element == BlueFlowContainer.BlueFlowAction {
                 switch action {
                 case .didTapPushNextView:
                     await self?.send(.pushNextBlueScreen)
+                case .didTapPushFlow:
+                    await self?.send(.pushNextFlow)
+                }
+            }
+        }
+    }
+
+    func merge(_ channel: AsyncChannel<SecondBlueViewController.Action>) {
+        Task { [weak self, weak channel] in
+            guard var iterator = channel?.makeAsyncIterator() else { return }
+            while let action = await iterator.next() {
+                switch action {
+                case .didTapPresentFlow:
+                    await self?.send(.presentNextFlow)
                 case .didTapPushFlow:
                     await self?.send(.pushNextFlow)
                 }
