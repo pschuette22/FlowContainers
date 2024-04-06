@@ -5,20 +5,31 @@
 //  Created by Peter Schuette on 4/3/24.
 //
 
+import AsyncAlgorithms
 import Foundation
 import UIKit
 
 final class FirstBlueViewController: UIViewController {
-    enum Action: Equatable {
+    enum Action: Equatable, Sendable {
         case didTapPushNextView
+        case didTapPushFlow
     }
-    
+
+    let actionChannel = AsyncChannel<Action>()
+
+    let firstButton = UIButton(configuration: .bordered())
+    let secondButton = UIButton(configuration: .bordered())
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .cyan
         navigationItem.title = "Blue View 1"
-            
+
         setupSubviews()
+    }
+
+    deinit {
+        actionChannel.finish()
     }
 }
 
@@ -26,17 +37,17 @@ final class FirstBlueViewController: UIViewController {
 
 extension FirstBlueViewController {
     private func setupSubviews() {
-        let firstButton = UIButton(configuration: .bordered())
+        // Style the buttons
         firstButton.setTitle("First button", for: .normal)
         firstButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        let secondButton = UIButton(configuration: .bordered())
         secondButton.setTitle("Second button", for: .normal)
         secondButton.translatesAutoresizingMaskIntoConstraints = false
-        
+
+        // Add to page
         view.addSubview(firstButton)
         view.addSubview(secondButton)
-        
+
+        // Constrain
         NSLayoutConstraint.activate([
             // First button
             firstButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -47,5 +58,20 @@ extension FirstBlueViewController {
             secondButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 32),
             secondButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -32),
         ])
+
+        // Actions
+        let firstButtonAction = UIAction { [weak actionChannel] _ in
+            Task {
+                await actionChannel?.send(.didTapPushNextView)
+            }
+        }
+        firstButton.addAction(firstButtonAction, for: .touchUpInside)
+
+        let secondButtonAction = UIAction { [weak actionChannel] _ in
+            Task {
+                await actionChannel?.send(.didTapPushFlow)
+            }
+        }
+        secondButton.addAction(secondButtonAction, for: .touchUpInside)
     }
 }
