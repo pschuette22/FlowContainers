@@ -8,7 +8,6 @@
 import XCTest
 
 final class FlowContainerSampleUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }

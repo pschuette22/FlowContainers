@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4956243F2BBE559700ABB722 /* FlowContainerSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956243E2BBE559700ABB722 /* FlowContainerSampleApp.swift */; };
-		495624412BBE559700ABB722 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624402BBE559700ABB722 /* ContentView.swift */; };
 		495624432BBE559800ABB722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495624422BBE559800ABB722 /* Assets.xcassets */; };
 		495624472BBE559800ABB722 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495624462BBE559800ABB722 /* Preview Assets.xcassets */; };
 		495624512BBE559800ABB722 /* FlowContainerSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624502BBE559800ABB722 /* FlowContainerSampleTests.swift */; };
@@ -16,6 +14,10 @@
 		4956245D2BBE559800ABB722 /* FlowContainerSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956245C2BBE559800ABB722 /* FlowContainerSampleUITestsLaunchTests.swift */; };
 		4956246B2BBE560B00ABB722 /* FirstBlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956246A2BBE560B00ABB722 /* FirstBlueViewController.swift */; };
 		4956246E2BBE58C000ABB722 /* FlowContainers in Frameworks */ = {isa = PBXBuildFile; productRef = 4956246D2BBE58C000ABB722 /* FlowContainers */; };
+		495624702BBE5CF700ABB722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956246F2BBE5CF700ABB722 /* AppDelegate.swift */; };
+		495624722BC0D1C900ABB722 /* BlueFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624712BC0D1C900ABB722 /* BlueFlowContainer.swift */; };
+		495624742BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */; };
+		495624762BC0D45400ABB722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624752BC0D45400ABB722 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,6 @@
 
 /* Begin PBXFileReference section */
 		4956243B2BBE559700ABB722 /* FlowContainerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowContainerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4956243E2BBE559700ABB722 /* FlowContainerSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainerSampleApp.swift; sourceTree = "<group>"; };
-		495624402BBE559700ABB722 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		495624422BBE559800ABB722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495624442BBE559800ABB722 /* FlowContainerSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowContainerSample.entitlements; sourceTree = "<group>"; };
 		495624462BBE559800ABB722 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,6 +48,11 @@
 		4956245A2BBE559800ABB722 /* FlowContainerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainerSampleUITests.swift; sourceTree = "<group>"; };
 		4956245C2BBE559800ABB722 /* FlowContainerSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainerSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4956246A2BBE560B00ABB722 /* FirstBlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBlueViewController.swift; sourceTree = "<group>"; };
+		4956246F2BBE5CF700ABB722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		495624712BC0D1C900ABB722 /* BlueFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueFlowContainer.swift; sourceTree = "<group>"; };
+		495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueFlowViewControllerFactory.swift; sourceTree = "<group>"; };
+		495624752BC0D45400ABB722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		495624772BC0DA7900ABB722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +104,13 @@
 		4956243D2BBE559700ABB722 /* FlowContainerSample */ = {
 			isa = PBXGroup;
 			children = (
+				495624772BC0DA7900ABB722 /* Info.plist */,
 				495624692BBE55C500ABB722 /* BlueFlow */,
-				4956243E2BBE559700ABB722 /* FlowContainerSampleApp.swift */,
-				495624402BBE559700ABB722 /* ContentView.swift */,
 				495624422BBE559800ABB722 /* Assets.xcassets */,
 				495624442BBE559800ABB722 /* FlowContainerSample.entitlements */,
 				495624452BBE559800ABB722 /* Preview Content */,
+				4956246F2BBE5CF700ABB722 /* AppDelegate.swift */,
+				495624752BC0D45400ABB722 /* SceneDelegate.swift */,
 			);
 			path = FlowContainerSample;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				4956246A2BBE560B00ABB722 /* FirstBlueViewController.swift */,
+				495624712BC0D1C900ABB722 /* BlueFlowContainer.swift */,
+				495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */,
 			);
 			path = BlueFlow;
 			sourceTree = "<group>";
@@ -278,9 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495624412BBE559700ABB722 /* ContentView.swift in Sources */,
-				4956243F2BBE559700ABB722 /* FlowContainerSampleApp.swift in Sources */,
+				495624762BC0D45400ABB722 /* SceneDelegate.swift in Sources */,
+				495624702BBE5CF700ABB722 /* AppDelegate.swift in Sources */,
+				495624742BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift in Sources */,
 				4956246B2BBE560B00ABB722 /* FirstBlueViewController.swift in Sources */,
+				495624722BC0D1C900ABB722 /* BlueFlowContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -424,6 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -444,25 +456,30 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlowContainerSample/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteschuette.FlowContainerSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,25 +499,30 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlowContainerSample/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteschuette.FlowContainerSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -521,8 +543,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteschuette.FlowContainerSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,8 +567,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteschuette.FlowContainerSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,8 +590,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteschuette.FlowContainerSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -588,8 +613,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteschuette.FlowContainerSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
