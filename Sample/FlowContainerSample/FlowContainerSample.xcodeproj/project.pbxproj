@@ -20,6 +20,10 @@
 		495624762BC0D45400ABB722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624752BC0D45400ABB722 /* SceneDelegate.swift */; };
 		49C351382BC0F59100DAD722 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 49C351372BC0F59100DAD722 /* AsyncAlgorithms */; };
 		49C3513A2BC102DC00DAD722 /* SecondBlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */; };
+		49C3513D2BC3051600DAD722 /* FirstRedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3513C2BC3051600DAD722 /* FirstRedViewController.swift */; };
+		49C3513F2BC3052800DAD722 /* RedFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3513E2BC3052800DAD722 /* RedFlowContainer.swift */; };
+		49C351412BC3053B00DAD722 /* SecondRedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351402BC3053B00DAD722 /* SecondRedViewController.swift */; };
+		49C351432BC3054900DAD722 /* RedFlowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351422BC3054900DAD722 /* RedFlowViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		495624752BC0D45400ABB722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		495624772BC0DA7900ABB722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBlueViewController.swift; sourceTree = "<group>"; };
+		49C3513C2BC3051600DAD722 /* FirstRedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRedViewController.swift; sourceTree = "<group>"; };
+		49C3513E2BC3052800DAD722 /* RedFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedFlowContainer.swift; sourceTree = "<group>"; };
+		49C351402BC3053B00DAD722 /* SecondRedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRedViewController.swift; sourceTree = "<group>"; };
+		49C351422BC3054900DAD722 /* RedFlowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedFlowViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 		4956243D2BBE559700ABB722 /* FlowContainerSample */ = {
 			isa = PBXGroup;
 			children = (
+				49C3513B2BC304F800DAD722 /* RedFlow */,
 				495624772BC0DA7900ABB722 /* Info.plist */,
 				495624692BBE55C500ABB722 /* BlueFlow */,
 				495624422BBE559800ABB722 /* Assets.xcassets */,
@@ -153,6 +162,17 @@
 				49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */,
 			);
 			path = BlueFlow;
+			sourceTree = "<group>";
+		};
+		49C3513B2BC304F800DAD722 /* RedFlow */ = {
+			isa = PBXGroup;
+			children = (
+				49C3513C2BC3051600DAD722 /* FirstRedViewController.swift */,
+				49C3513E2BC3052800DAD722 /* RedFlowContainer.swift */,
+				49C351402BC3053B00DAD722 /* SecondRedViewController.swift */,
+				49C351422BC3054900DAD722 /* RedFlowViewControllerFactory.swift */,
+			);
+			path = RedFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C351412BC3053B00DAD722 /* SecondRedViewController.swift in Sources */,
 				49C3513A2BC102DC00DAD722 /* SecondBlueViewController.swift in Sources */,
 				495624762BC0D45400ABB722 /* SceneDelegate.swift in Sources */,
 				495624702BBE5CF700ABB722 /* AppDelegate.swift in Sources */,
 				495624742BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift in Sources */,
+				49C351432BC3054900DAD722 /* RedFlowViewControllerFactory.swift in Sources */,
 				4956246B2BBE560B00ABB722 /* FirstBlueViewController.swift in Sources */,
+				49C3513D2BC3051600DAD722 /* FirstRedViewController.swift in Sources */,
 				495624722BC0D1C900ABB722 /* BlueFlowContainer.swift in Sources */,
+				49C3513F2BC3052800DAD722 /* RedFlowContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
