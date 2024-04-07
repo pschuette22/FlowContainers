@@ -24,6 +24,10 @@
 		49C3513F2BC3052800DAD722 /* RedFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3513E2BC3052800DAD722 /* RedFlowContainer.swift */; };
 		49C351412BC3053B00DAD722 /* SecondRedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351402BC3053B00DAD722 /* SecondRedViewController.swift */; };
 		49C351432BC3054900DAD722 /* RedFlowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351422BC3054900DAD722 /* RedFlowViewControllerFactory.swift */; };
+		49C351462BC306FA00DAD722 /* FirstGreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351452BC306FA00DAD722 /* FirstGreenViewController.swift */; };
+		49C351482BC3070700DAD722 /* SecondGreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351472BC3070700DAD722 /* SecondGreenViewController.swift */; };
+		49C3514A2BC3071400DAD722 /* GreenFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351492BC3071400DAD722 /* GreenFlowContainer.swift */; };
+		49C3514C2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3514B2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		49C3513E2BC3052800DAD722 /* RedFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedFlowContainer.swift; sourceTree = "<group>"; };
 		49C351402BC3053B00DAD722 /* SecondRedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRedViewController.swift; sourceTree = "<group>"; };
 		49C351422BC3054900DAD722 /* RedFlowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedFlowViewControllerFactory.swift; sourceTree = "<group>"; };
+		49C351452BC306FA00DAD722 /* FirstGreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGreenViewController.swift; sourceTree = "<group>"; };
+		49C351472BC3070700DAD722 /* SecondGreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGreenViewController.swift; sourceTree = "<group>"; };
+		49C351492BC3071400DAD722 /* GreenFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFlowContainer.swift; sourceTree = "<group>"; };
+		49C3514B2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFlowViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 		4956243D2BBE559700ABB722 /* FlowContainerSample */ = {
 			isa = PBXGroup;
 			children = (
+				49C351442BC306EC00DAD722 /* GreenFlow */,
 				49C3513B2BC304F800DAD722 /* RedFlow */,
 				495624772BC0DA7900ABB722 /* Info.plist */,
 				495624692BBE55C500ABB722 /* BlueFlow */,
@@ -173,6 +182,17 @@
 				49C351422BC3054900DAD722 /* RedFlowViewControllerFactory.swift */,
 			);
 			path = RedFlow;
+			sourceTree = "<group>";
+		};
+		49C351442BC306EC00DAD722 /* GreenFlow */ = {
+			isa = PBXGroup;
+			children = (
+				49C351452BC306FA00DAD722 /* FirstGreenViewController.swift */,
+				49C351472BC3070700DAD722 /* SecondGreenViewController.swift */,
+				49C351492BC3071400DAD722 /* GreenFlowContainer.swift */,
+				49C3514B2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift */,
+			);
+			path = GreenFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,9 +339,13 @@
 				495624702BBE5CF700ABB722 /* AppDelegate.swift in Sources */,
 				495624742BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift in Sources */,
 				49C351432BC3054900DAD722 /* RedFlowViewControllerFactory.swift in Sources */,
+				49C351482BC3070700DAD722 /* SecondGreenViewController.swift in Sources */,
 				4956246B2BBE560B00ABB722 /* FirstBlueViewController.swift in Sources */,
 				49C3513D2BC3051600DAD722 /* FirstRedViewController.swift in Sources */,
+				49C3514A2BC3071400DAD722 /* GreenFlowContainer.swift in Sources */,
 				495624722BC0D1C900ABB722 /* BlueFlowContainer.swift in Sources */,
+				49C3514C2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift in Sources */,
+				49C351462BC306FA00DAD722 /* FirstGreenViewController.swift in Sources */,
 				49C3513F2BC3052800DAD722 /* RedFlowContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
