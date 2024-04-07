@@ -21,7 +21,7 @@ final class SecondGreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+        view.backgroundColor = .green
         navigationItem.title = "Green View 2"
 
         setupSubviews()
