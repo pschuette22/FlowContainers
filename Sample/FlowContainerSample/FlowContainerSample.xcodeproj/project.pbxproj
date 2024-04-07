@@ -12,22 +12,20 @@
 		495624512BBE559800ABB722 /* FlowContainerSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624502BBE559800ABB722 /* FlowContainerSampleTests.swift */; };
 		4956245B2BBE559800ABB722 /* FlowContainerSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956245A2BBE559800ABB722 /* FlowContainerSampleUITests.swift */; };
 		4956245D2BBE559800ABB722 /* FlowContainerSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956245C2BBE559800ABB722 /* FlowContainerSampleUITestsLaunchTests.swift */; };
-		4956246B2BBE560B00ABB722 /* FirstBlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956246A2BBE560B00ABB722 /* FirstBlueViewController.swift */; };
 		4956246E2BBE58C000ABB722 /* FlowContainers in Frameworks */ = {isa = PBXBuildFile; productRef = 4956246D2BBE58C000ABB722 /* FlowContainers */; };
 		495624702BBE5CF700ABB722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956246F2BBE5CF700ABB722 /* AppDelegate.swift */; };
-		495624722BC0D1C900ABB722 /* BlueFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624712BC0D1C900ABB722 /* BlueFlowContainer.swift */; };
-		495624742BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */; };
 		495624762BC0D45400ABB722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495624752BC0D45400ABB722 /* SceneDelegate.swift */; };
 		49C351382BC0F59100DAD722 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 49C351372BC0F59100DAD722 /* AsyncAlgorithms */; };
-		49C3513A2BC102DC00DAD722 /* SecondBlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */; };
 		49C3513D2BC3051600DAD722 /* FirstRedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3513C2BC3051600DAD722 /* FirstRedViewController.swift */; };
 		49C3513F2BC3052800DAD722 /* RedFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3513E2BC3052800DAD722 /* RedFlowContainer.swift */; };
 		49C351412BC3053B00DAD722 /* SecondRedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351402BC3053B00DAD722 /* SecondRedViewController.swift */; };
 		49C351432BC3054900DAD722 /* RedFlowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351422BC3054900DAD722 /* RedFlowViewControllerFactory.swift */; };
-		49C351462BC306FA00DAD722 /* FirstGreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351452BC306FA00DAD722 /* FirstGreenViewController.swift */; };
-		49C351482BC3070700DAD722 /* SecondGreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351472BC3070700DAD722 /* SecondGreenViewController.swift */; };
-		49C3514A2BC3071400DAD722 /* GreenFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351492BC3071400DAD722 /* GreenFlowContainer.swift */; };
-		49C3514C2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3514B2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift */; };
+		49C3514F2BC3185D00DAD722 /* AppFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3514E2BC3185D00DAD722 /* AppFlowContainer.swift */; };
+		49C351512BC318B800DAD722 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351502BC318B800DAD722 /* MainViewController.swift */; };
+		49C351542BC31AED00DAD722 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351532BC31AED00DAD722 /* Events.swift */; };
+		49C351562BC3216700DAD722 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351552BC3216700DAD722 /* Effects.swift */; };
+		49C351582BC326C700DAD722 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351572BC326C700DAD722 /* State.swift */; };
+		49C3515C2BC32FB500DAD722 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,21 +55,19 @@
 		495624562BBE559800ABB722 /* FlowContainerSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowContainerSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4956245A2BBE559800ABB722 /* FlowContainerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainerSampleUITests.swift; sourceTree = "<group>"; };
 		4956245C2BBE559800ABB722 /* FlowContainerSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContainerSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4956246A2BBE560B00ABB722 /* FirstBlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBlueViewController.swift; sourceTree = "<group>"; };
 		4956246F2BBE5CF700ABB722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		495624712BC0D1C900ABB722 /* BlueFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueFlowContainer.swift; sourceTree = "<group>"; };
-		495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueFlowViewControllerFactory.swift; sourceTree = "<group>"; };
 		495624752BC0D45400ABB722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		495624772BC0DA7900ABB722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBlueViewController.swift; sourceTree = "<group>"; };
 		49C3513C2BC3051600DAD722 /* FirstRedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRedViewController.swift; sourceTree = "<group>"; };
 		49C3513E2BC3052800DAD722 /* RedFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedFlowContainer.swift; sourceTree = "<group>"; };
 		49C351402BC3053B00DAD722 /* SecondRedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRedViewController.swift; sourceTree = "<group>"; };
 		49C351422BC3054900DAD722 /* RedFlowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedFlowViewControllerFactory.swift; sourceTree = "<group>"; };
-		49C351452BC306FA00DAD722 /* FirstGreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGreenViewController.swift; sourceTree = "<group>"; };
-		49C351472BC3070700DAD722 /* SecondGreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGreenViewController.swift; sourceTree = "<group>"; };
-		49C351492BC3071400DAD722 /* GreenFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFlowContainer.swift; sourceTree = "<group>"; };
-		49C3514B2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFlowViewControllerFactory.swift; sourceTree = "<group>"; };
+		49C3514E2BC3185D00DAD722 /* AppFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowContainer.swift; sourceTree = "<group>"; };
+		49C351502BC318B800DAD722 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		49C351532BC31AED00DAD722 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		49C351552BC3216700DAD722 /* Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
+		49C351572BC326C700DAD722 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +120,11 @@
 		4956243D2BBE559700ABB722 /* FlowContainerSample */ = {
 			isa = PBXGroup;
 			children = (
-				49C351442BC306EC00DAD722 /* GreenFlow */,
+				49C351592BC32FA300DAD722 /* Extensions */,
+				49C351522BC31A9A00DAD722 /* Redux */,
+				49C3514D2BC3184E00DAD722 /* AppSceneFlow */,
 				49C3513B2BC304F800DAD722 /* RedFlow */,
 				495624772BC0DA7900ABB722 /* Info.plist */,
-				495624692BBE55C500ABB722 /* BlueFlow */,
 				495624422BBE559800ABB722 /* Assets.xcassets */,
 				495624442BBE559800ABB722 /* FlowContainerSample.entitlements */,
 				495624452BBE559800ABB722 /* Preview Content */,
@@ -162,17 +159,6 @@
 			path = FlowContainerSampleUITests;
 			sourceTree = "<group>";
 		};
-		495624692BBE55C500ABB722 /* BlueFlow */ = {
-			isa = PBXGroup;
-			children = (
-				4956246A2BBE560B00ABB722 /* FirstBlueViewController.swift */,
-				495624712BC0D1C900ABB722 /* BlueFlowContainer.swift */,
-				495624732BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift */,
-				49C351392BC102DC00DAD722 /* SecondBlueViewController.swift */,
-			);
-			path = BlueFlow;
-			sourceTree = "<group>";
-		};
 		49C3513B2BC304F800DAD722 /* RedFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,15 +170,39 @@
 			path = RedFlow;
 			sourceTree = "<group>";
 		};
-		49C351442BC306EC00DAD722 /* GreenFlow */ = {
+		49C3514D2BC3184E00DAD722 /* AppSceneFlow */ = {
 			isa = PBXGroup;
 			children = (
-				49C351452BC306FA00DAD722 /* FirstGreenViewController.swift */,
-				49C351472BC3070700DAD722 /* SecondGreenViewController.swift */,
-				49C351492BC3071400DAD722 /* GreenFlowContainer.swift */,
-				49C3514B2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift */,
+				49C3514E2BC3185D00DAD722 /* AppFlowContainer.swift */,
+				49C351502BC318B800DAD722 /* MainViewController.swift */,
 			);
-			path = GreenFlow;
+			path = AppSceneFlow;
+			sourceTree = "<group>";
+		};
+		49C351522BC31A9A00DAD722 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				49C351532BC31AED00DAD722 /* Events.swift */,
+				49C351552BC3216700DAD722 /* Effects.swift */,
+				49C351572BC326C700DAD722 /* State.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		49C351592BC32FA300DAD722 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				49C3515A2BC32FA900DAD722 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		49C3515A2BC32FA900DAD722 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,19 +343,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C3514F2BC3185D00DAD722 /* AppFlowContainer.swift in Sources */,
 				49C351412BC3053B00DAD722 /* SecondRedViewController.swift in Sources */,
-				49C3513A2BC102DC00DAD722 /* SecondBlueViewController.swift in Sources */,
+				49C351542BC31AED00DAD722 /* Events.swift in Sources */,
 				495624762BC0D45400ABB722 /* SceneDelegate.swift in Sources */,
 				495624702BBE5CF700ABB722 /* AppDelegate.swift in Sources */,
-				495624742BC0D1E400ABB722 /* BlueFlowViewControllerFactory.swift in Sources */,
 				49C351432BC3054900DAD722 /* RedFlowViewControllerFactory.swift in Sources */,
-				49C351482BC3070700DAD722 /* SecondGreenViewController.swift in Sources */,
-				4956246B2BBE560B00ABB722 /* FirstBlueViewController.swift in Sources */,
+				49C351512BC318B800DAD722 /* MainViewController.swift in Sources */,
+				49C351582BC326C700DAD722 /* State.swift in Sources */,
 				49C3513D2BC3051600DAD722 /* FirstRedViewController.swift in Sources */,
-				49C3514A2BC3071400DAD722 /* GreenFlowContainer.swift in Sources */,
-				495624722BC0D1C900ABB722 /* BlueFlowContainer.swift in Sources */,
-				49C3514C2BC3072200DAD722 /* GreenFlowViewControllerFactory.swift in Sources */,
-				49C351462BC306FA00DAD722 /* FirstGreenViewController.swift in Sources */,
+				49C3515C2BC32FB500DAD722 /* UIButton+Extensions.swift in Sources */,
+				49C351562BC3216700DAD722 /* Effects.swift in Sources */,
 				49C3513F2BC3052800DAD722 /* RedFlowContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,8 +532,8 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -536,9 +544,11 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -567,8 +577,8 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -579,9 +589,11 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

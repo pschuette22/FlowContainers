@@ -13,7 +13,7 @@ import UIKit
 final class RedFlowContainer: FlowContainer {
     enum RedFlowAction: Equatable, Sendable {
         case pushNextRedScreen
-        case pushNextFlow // Green?
+        case pushNextFlow
         case presentNextFlow
     }
 
