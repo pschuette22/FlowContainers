@@ -75,7 +75,7 @@ extension AppFlowContainer: EffectHandling {
             transition(to: newState, from: currentState)
         case .presentAuthentication:
             // TODO: present authentication flow
-            break
+            present(AuthenticationFlowContainer())
         case .presentNeedsAuthentication:
             // TODO: present alert indicating authentication is needed
             break

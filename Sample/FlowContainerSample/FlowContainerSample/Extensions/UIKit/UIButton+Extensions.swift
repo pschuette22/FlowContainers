@@ -23,4 +23,8 @@ extension UIButton {
         }
         addAction(action, for: controlEvent)
     }
+
+    func addTapAction(_ handler: @escaping UIActionHandler) {
+        addAction(UIAction(handler: handler), for: .touchUpInside)
+    }
 }

@@ -28,6 +28,7 @@
 		49C3515C2BC32FB500DAD722 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */; };
 		49EB1F4D2BC3440F003F0D01 /* AuthenticationFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB1F4C2BC3440F003F0D01 /* AuthenticationFlowContainer.swift */; };
 		49EB1F4F2BC344A2003F0D01 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB1F4E2BC344A2003F0D01 /* LoginViewController.swift */; };
+		49EB1F512BC6497A003F0D01 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB1F502BC6497A003F0D01 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		49EB1F4C2BC3440F003F0D01 /* AuthenticationFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowContainer.swift; sourceTree = "<group>"; };
 		49EB1F4E2BC344A2003F0D01 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		49EB1F502BC6497A003F0D01 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */,
+				49EB1F502BC6497A003F0D01 /* UIView+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				49C3513D2BC3051600DAD722 /* FirstRedViewController.swift in Sources */,
 				49C3515C2BC32FB500DAD722 /* UIButton+Extensions.swift in Sources */,
 				49C351562BC3216700DAD722 /* Effects.swift in Sources */,
+				49EB1F512BC6497A003F0D01 /* UIView+Extensions.swift in Sources */,
 				49C3513F2BC3052800DAD722 /* RedFlowContainer.swift in Sources */,
 				49EB1F4D2BC3440F003F0D01 /* AuthenticationFlowContainer.swift in Sources */,
 			);
