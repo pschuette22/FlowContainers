@@ -17,16 +17,20 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
+        // Global styling
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
         UINavigationBar.appearance().standardAppearance = navBarAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
 
+        // Prepare window
         window = UIWindow(windowScene: windowScene)
         let rootNavigationController = UINavigationController()
         window?.rootViewController = rootNavigationController
+        window?.makeKeyAndVisible()
+
+        // Start the app flow
         let firstFlow = AppFlowContainer()
         firstFlow.start(on: rootNavigationController)
-        window?.makeKeyAndVisible()
     }
 }

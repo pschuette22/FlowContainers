@@ -26,6 +26,8 @@
 		49C351562BC3216700DAD722 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351552BC3216700DAD722 /* Effects.swift */; };
 		49C351582BC326C700DAD722 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C351572BC326C700DAD722 /* State.swift */; };
 		49C3515C2BC32FB500DAD722 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */; };
+		49EB1F4D2BC3440F003F0D01 /* AuthenticationFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB1F4C2BC3440F003F0D01 /* AuthenticationFlowContainer.swift */; };
+		49EB1F4F2BC344A2003F0D01 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB1F4E2BC344A2003F0D01 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		49C351552BC3216700DAD722 /* Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
 		49C351572BC326C700DAD722 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		49EB1F4C2BC3440F003F0D01 /* AuthenticationFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowContainer.swift; sourceTree = "<group>"; };
+		49EB1F4E2BC344A2003F0D01 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		4956243D2BBE559700ABB722 /* FlowContainerSample */ = {
 			isa = PBXGroup;
 			children = (
+				49EB1F4B2BC34391003F0D01 /* AuthenticationFlow */,
 				49C351592BC32FA300DAD722 /* Extensions */,
 				49C351522BC31A9A00DAD722 /* Redux */,
 				49C3514D2BC3184E00DAD722 /* AppSceneFlow */,
@@ -203,6 +208,15 @@
 				49C3515B2BC32FB500DAD722 /* UIButton+Extensions.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		49EB1F4B2BC34391003F0D01 /* AuthenticationFlow */ = {
+			isa = PBXGroup;
+			children = (
+				49EB1F4C2BC3440F003F0D01 /* AuthenticationFlowContainer.swift */,
+				49EB1F4E2BC344A2003F0D01 /* LoginViewController.swift */,
+			);
+			path = AuthenticationFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49EB1F4F2BC344A2003F0D01 /* LoginViewController.swift in Sources */,
 				49C3514F2BC3185D00DAD722 /* AppFlowContainer.swift in Sources */,
 				49C351412BC3053B00DAD722 /* SecondRedViewController.swift in Sources */,
 				49C351542BC31AED00DAD722 /* Events.swift in Sources */,
@@ -355,6 +370,7 @@
 				49C3515C2BC32FB500DAD722 /* UIButton+Extensions.swift in Sources */,
 				49C351562BC3216700DAD722 /* Effects.swift in Sources */,
 				49C3513F2BC3052800DAD722 /* RedFlowContainer.swift in Sources */,
+				49EB1F4D2BC3440F003F0D01 /* AuthenticationFlowContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
